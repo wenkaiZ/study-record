@@ -14,6 +14,29 @@
                 </li>
             </ol>
         </div>
+        <!-- 在 v-for 块中，我们可以访问所有父作用域的属性。
+            v-for 还支持一个可选的第二个参数，即当前项的索引。 -->
+        <ul id="example-2">
+            <li v-for="(item, index) in items">
+              {{ parentMessage }} - {{ index }} - {{ item.message }}
+            </li>
+          </ul>
+
+        <!-- 你也可以用 v-for 来遍历一个对象的属性
+            在遍历对象时，会按 Object.keys() 的结果遍历，
+            但是不能保证它的结果在不同的 JavaScript 引擎下都一致。 
+        -->
+        <ul id="v-for-object" class="demo">
+            <li v-for="value in object">
+              {{ value }}
+            </li>
+            <!-- 有多个参数可以选择 -->
+            <div v-for="(value, name, index) in object">
+                {{ index }}. {{ name }}: {{ value }}
+              </div>
+          </ul>
+
+
             
         <script src="index.js"></script>
     </body>
