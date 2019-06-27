@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        <div id="vm">
+                <p>this is a: {{ a }}</p>
+        </div>
+        <div id="app">            
+                <p>{{ foo }}</p>
+                <!-- 这里的 `foo` 不会更新！ -->
+                <button v-on:click="foo = 'baz'">Change it</button>
+        </div>
+        <script src="data-method.js"></script>
+    </body>
+    
+</html>
