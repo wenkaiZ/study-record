@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        
+        <div id="app">
+            <component-a
+                v-bind:items="groceryList"
+            >
+           </component-a>
+           
+           <component-b
+                v-bind:value="value"
+           ><p></component-b>
+           
+        </div>
+
+
+            
+        <script src="index.js"></script>
+    </body>
+</html>
