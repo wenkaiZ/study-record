@@ -1,0 +1,19 @@
+<!DOCTYPE html><html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+    
+        <div id="app">
+            <p>{{ items }}</p>
+            <button @click = "changeA">索引直接设置一个数组项,改变数组长度 没有响应</button>
+            <button @click = "changeB">Vue.set 响应 </button>
+            <button @click = "changeC">Array.prototype.splice 响应</button>
+            <button @click = "changeD">vm.$set 响应</button>
+        </div>
+        
+        <script src="vue-set.js"></script>
+    </body>
+</html>
