@@ -44,6 +44,5 @@ export default {
     */
     extend(config, ctx) {
     }
-  },
-  transition: 'test'
+  }
 }
