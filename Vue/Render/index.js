@@ -14,6 +14,9 @@ var componentA = {
         }
     }
 }
+
+/*v-model
+渲染函数中没有与 v-model 的直接对应——你必须自己实现相应的逻辑： */
 var componentB = {
     props: ['value'],
     render: function (createElement) {
@@ -26,6 +29,7 @@ var componentB = {
                 input: function (event) {
                     self.$emit('input', event.target.value)
                     console.log(event.target.value)
+                    console.log("this is value: "+self.value)
                 }
             }
         })
